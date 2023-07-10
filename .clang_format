@@ -3,7 +3,7 @@ BasedOnStyle: Google
 AccessModifierOffset: -4
 AllowShortFunctionsOnASingleLine: InlineOnly
 BinPackArguments: false
-ColumnLimit: 160
+ColumnLimit: 120
 DerivePointerAlignment: false
 IndentWidth: 4
 InsertTrailingCommas: Wrapped

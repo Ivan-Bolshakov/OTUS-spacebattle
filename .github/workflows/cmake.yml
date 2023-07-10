@@ -30,4 +30,4 @@ jobs:
         shell: bash
         run: | 
           echo run tests
-          ./bin/test_quadratic_equation
+          ./bin/test_spacebattle
