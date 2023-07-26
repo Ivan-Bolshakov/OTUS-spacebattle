@@ -19,16 +19,13 @@ public:
         return *this;
     }
 
-    friend std::ostream &operator<<(std::ostream &os, const Vector &v);
+    friend std::ostream &operator<<(std::ostream &os, const Vector &v)
+    {
+        os << '{' << v.x_ << ", " << v.y_ << '}';
+        return os;
+    }
+    friend bool operator==(const Vector &v1, const Vector &v2)
+    {
+        return v1.x_ == v2.x_ && v1.y_ == v2.y_;
+    }
 };
-
-std::ostream &operator<<(std::ostream &os, const Vector &v)
-{
-    os << '{' << v.x_ << ", " << v.y_ << '}';
-    return os;
-}
-
-bool operator==(const Vector &v1, const Vector &v2)
-{
-    return v1.x_ == v2.x_ && v1.y_ == v2.y_;
-}
