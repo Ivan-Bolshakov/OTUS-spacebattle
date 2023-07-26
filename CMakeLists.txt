@@ -10,7 +10,7 @@ add_subdirectory(gtest)
 include_directories(gtest/googletest/include)
 include_directories(src)
 
-add_executable(test_spacebattle test/move_test.cpp test/rotate_test.cpp)
+add_executable(test_spacebattle test/move_test.cpp test/rotate_test.cpp test/fuel_test.cpp test/macro_test.cpp)
 
 set_target_properties(spacebattle_main test_spacebattle PROPERTIES
     CXX_STANDARD 17
